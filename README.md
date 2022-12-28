@@ -3,6 +3,8 @@
 
 使用方法参考shell文件夹里面的read me.txt。
 
+具体修改代码方法请参考原作者文章。
+
 原作者地址：https://blog.csdn.net/yangxiangzhan/article/details/86555117?spm=1001.2014.3001.5501
 
 原作者源码地址：https://gitee.com/somebug/atomlib
