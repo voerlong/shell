@@ -1,0 +1,7 @@
+适用于stm32f1
+1.将src添加到工程中。
+2.将inc设置头文件路径。
+3.添加头文件:#include "shell_control.h"
+3.在主函数初始化的地方写入shell_init_all();。
+4.在shell_control.c写命令相关的。
+shell源码来自于古么宁,原创网址：https://blog.csdn.net/yangxiangzhan/article/details/86555117?spm=1001.2014.3001.5501
