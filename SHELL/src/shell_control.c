@@ -63,23 +63,15 @@ void shell_control_explain(unsigned int* ID)
 {
 	uint32_t tab[] = {0x8CC6D608 ,0x8D4C533C ,
 										0x8d598e99 ,0x8DC87250 ,
-										0x8DEA9903 ,0x8DF95BD0 ,
 										0x8E09AF53 ,0x9152F754 ,
 										0xA08971F3 ,0xCD1A7A1A ,
-										0xD9BDA819 ,0xDA1061B3 ,
-										0x8DE2147E ,0x8DF3D6AD ,
-										0xD1039145 ,0xD17CDDDB ,
-										0xD1BD5E16 };
+										0xD9BDA819 ,0xDA1061B3 };
 	char* str[] = 	 {"\r\n清屏指令：" 																												,"\r\n查看GPIOx引脚状态：[命令] [GPIOx(GPIOA~G)]",
 										"\r\n查看所有命令的ID：" 																								,"\r\n查看芯片的系统时钟参数：",
-										"\r\n查看AD最大值和最小值：" 																						,"\r\n查看行列最大值和最小值：",
 										"\r\n查看外设时钟状态：" 																								,"\r\ndebug调试信息：",
 										"\r\n查看所有已经注册了的命令：" 																				,"\r\n设置引脚高低电平：[命令] [GPIOx(GPIOA~G)] [GPIO_Pin(0~15)] [1/0]",
-										"\r\n查看shell版本：" 																									,"\r\n查看程序版本：",
-										"\r\n初始化行列最大值和最小值：" 																				,"\r\n初始化AD的最大值和最小值：",
-										"\r\n测试某一个点的电压值：[命令] [行(1~max)] [ 列(1~max)]"							,"\r\n测试所有点的电压值",
-										"\r\n测试规定范围内的点电压：[命令] [开始的行数(1~max)] [结束的行数(1~max)] [开始列数(1~max)] [结束列数(1~max)]"};
-	for(int i = 0 ;i < 17 ;i++){
+										"\r\n查看shell版本：" 																									,"\r\n查看程序版本："};
+	for(int i = 0 ;i < 10 ;i++){
 		if(*ID == tab[i]){
 			printf("%s" ,str[i]);
 		}
